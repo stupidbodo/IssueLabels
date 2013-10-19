@@ -28,7 +28,7 @@ class GitHubIssue(object):
         
         api_response = self.call_api(url, data)
         if api_response:
-            if api_response.getcode() == 200:
+            if api_response.getcode() == 201:
                 print "New Label : %s" % name
                 return True
 
